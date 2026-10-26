@@ -3,11 +3,12 @@ using UnityEngine;
 public class cameraController : MonoBehaviour{
     [Header("Camera")]
     public Transform target;
-    public float smoothSpeed = 2.125f;
+    public float smoothSpeed = 2.0f;
     public Vector3 offset = new Vector3(0,15,-10);
 
     // Update is called once per frame
     void Update(){
+        //Here we look at the player. 
         transform.LookAt(target);
     }
     private void LateUpdate(){
